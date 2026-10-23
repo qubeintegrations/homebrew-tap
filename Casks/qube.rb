@@ -4,25 +4,25 @@ cask "qube" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "qube"], chdir: ".", must_succeed: false
   end
 
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     on_arm do
-      sha256 "19434c264659a9e81042da840f0062309fa445294691e93b0eeb65379b2936d5"
+      sha256 "15105545bef40b3c64288c958bebf48a4feecc72db8232cb30fcc527560c135b"
       url "https://github.com/qubeintegrations/qube-cli/releases/download/v#{version}/qube_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "1477a4b947ec050dd4ce15256c960538d2b9f02e1c971721eddaf65890259920"
+      sha256 "7e1179b0eeefc7047fc609bb81eda87cc88b88549b8fecef4525513e18086af6"
       url "https://github.com/qubeintegrations/qube-cli/releases/download/v#{version}/qube_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "d2c095f6946c08f264441590aaa41623c9fb1903c3d17789bd8bc9278baf8b16"
+      sha256 "e08a5c9ea7e3ea39e4879347e902b36eeb40144cf8c6774c308766b63291ccdb"
       url "https://github.com/qubeintegrations/qube-cli/releases/download/v#{version}/qube_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "f0dd4a0388f0dbe316089c68ae15fc7c9b1a69ed0b5d3268646100da6269d5b8"
+      sha256 "f681adf2db843425e143790d7aced1cc8edfd6026a46938e01c49e5ee8d66d60"
       url "https://github.com/qubeintegrations/qube-cli/releases/download/v#{version}/qube_#{version}_linux_amd64.tar.gz"
     end
   end
